@@ -1,0 +1,167 @@
+
+::-webkit-scrollbar {
+	width: 1px;
+	height: 1px;
+  }
+  
+  ::-webkit-scrollbar-button {
+	width: 1px;
+	height: 1px;
+  }
+  
+  /* Page setup */
+  #page {
+	display: block;
+	position: relative;
+	width: 100vw;
+	height: auto;
+	margin: 0 auto;
+  }
+  
+  /* Grid window width & height */
+  :root {
+	--gW: 100vw;
+	--gH: 100vh;
+  }
+  
+  /* Horizontal scroll container */
+  .grid-horizontal {
+	display: block;
+	position: absolute;
+	top: var(--gH);
+	width: var(--gH);
+	height: var(--gW);
+	overflow-y: auto;
+	overflow-x: hidden;
+	transform: rotate(-90deg);
+	transform-origin: top left;
+  }
+  
+  .grid-horizontal > div {
+	display: block;
+	position: relative;
+	left: var(--gH);
+	width: var(--gW);
+	height: var(--gW);
+	transform: rotate(90deg);
+	transform-origin: top left;
+  }
+  
+  .grid-horizontal > div:nth-child(even) {
+	background-color: #cab;
+  }
+  
+  .grid-horizontal > div:nth-child(odd) {
+	background-color: #abc;
+  }
+  
+  .grid-horizontal > div > .grid-inner {
+	display: block;
+	position: relative;
+	width: var(--gW);
+	height: var(--gH);
+  }
+
+  .headtext2{
+	font-family: Hubballi;
+font-size: 40px;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: center;
+
+  }
+
+  .headtext1{
+	font-family: JejuGothic;
+font-size: 140px;
+font-weight: 400;
+line-height: 163px;
+letter-spacing: 0em;
+text-align: center;
+
+  }
+
+
+  @media (min-width: 1024px) {
+
+	.headtext1{
+		font-size: 100px;
+		margin-top: 370px;
+
+	}
+  }
+  
+  @media (min-width: 1280px) {
+
+	.headtext1{
+		font-size: 120px;
+		margin-top: 370px;
+
+	}
+  }
+  @media (min-width: 1533px) {
+
+	.headtext1{
+		font-size: 160px;
+		margin-top: 390px;
+		line-height: 200px;
+
+	}
+  }
+
+  @media (max-width: 1023px) {
+
+	.headtext1{
+		font-size: 70px;
+		line-height: 83px;
+		margin-top: 70px;
+
+
+	}
+  }
+
+  @media (max-width: 770px) {
+
+	.headtext1{
+		font-size: 50px;
+		line-height: 73px;
+		margin-top: 0px;
+
+
+
+	}
+  }
+
+  @media (max-width: 538px) {
+
+	.headtext1{
+		font-size: 40px;
+		line-height: 73px;
+
+
+	}
+  }
+
+  @media (max-width: 412px) {
+
+	.headtext1{
+		font-size: 35px;
+		line-height: 73px;
+
+
+	}
+  }
+
+  @media (max-width: 360px) {
+
+	.headtext1{
+		font-size: 30px;
+		line-height: 73px;
+
+
+	}
+  }
+  
+
+
+  

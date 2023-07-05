@@ -1,0 +1,21 @@
+.navitem{
+    font-family: Hubballi;
+/* font-size: 18px; */
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.navitem:hover{
+    color: #C04BF2;
+}
+
+.contacticon{
+    color: #C04BF2;
+    
+}
+
+
+
